@@ -10,4 +10,7 @@
 
 <div *ngFor="let i of imageResults">
   <img src="{{i.url}}">
+  <div *ngFor="let it of i.image_tags">
+    <a href="javascript:void(0)">{{it}}</a>
+  </div>
 </div>
